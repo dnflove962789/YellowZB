@@ -13,6 +13,7 @@
 		7E7278F5204D325800E797E3 /* YellowZB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E7278F3204D325800E797E3 /* YellowZB.xcdatamodeld */; };
 		7E7278F7204D325800E797E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E7278F6204D325800E797E3 /* Assets.xcassets */; };
 		7E7278FA204D325800E797E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E7278F8204D325800E797E3 /* LaunchScreen.storyboard */; };
+		7E727902204D3CCC00E797E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E727901204D3CCC00E797E3 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7E7278F6204D325800E797E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E7278F9204D325800E797E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E7278FB204D325800E797E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E727901204D3CCC00E797E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				7E7278F8204D325800E797E3 /* LaunchScreen.storyboard */,
 				7E7278FB204D325800E797E3 /* Info.plist */,
 				7E7278F3204D325800E797E3 /* YellowZB.xcdatamodeld */,
+				7E727901204D3CCC00E797E3 /* Images.xcassets */,
 			);
 			path = YellowZB;
 			sourceTree = "<group>";
@@ -127,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E7278FA204D325800E797E3 /* LaunchScreen.storyboard in Resources */,
+				7E727902204D3CCC00E797E3 /* Images.xcassets in Resources */,
 				7E7278F7204D325800E797E3 /* Assets.xcassets in Resources */,
 				7E7278F2204D325800E797E3 /* Main.storyboard in Resources */,
 			);
@@ -278,14 +282,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = YellowZB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zzr.YellowZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -293,14 +299,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = YellowZB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zzr.YellowZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
