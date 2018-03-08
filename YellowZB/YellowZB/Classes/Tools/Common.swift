@@ -8,5 +8,10 @@
 
 import UIKit
 
-let kStatusBarH: CGFloat = 20
-let kNavigationBarH: CGFloat = 44
+let kStatusBarH: CGFloat = UIApplication.shared.statusBarFrame.height
+let kNavigationBarH: CGFloat =  44
+
+let kScreenW = UIScreen.main.bounds.width
+let kScreenH = UIScreen.main.bounds.height
+
+
