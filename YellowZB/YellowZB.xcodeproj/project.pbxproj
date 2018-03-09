@@ -24,6 +24,7 @@
 		7E727927204E928A00E797E3 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E727926204E928A00E797E3 /* Common.swift */; };
 		7E727929204FC8C600E797E3 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E727928204FC8C600E797E3 /* PageContentView.swift */; };
 		7E72792B204FCF1900E797E3 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E72792A204FCF1900E797E3 /* UIColor-Extension.swift */; };
+		7E72792D20526C9700E797E3 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E72792C20526C9700E797E3 /* RecommendViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		7E727926204E928A00E797E3 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		7E727928204FC8C600E797E3 /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		7E72792A204FCF1900E797E3 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		7E72792C20526C9700E797E3 /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 			children = (
 				7E72790A204D570D00E797E3 /* Home.storyboard */,
 				7E72791F204E72AE00E797E3 /* HomeViewController.swift */,
+				7E72792C20526C9700E797E3 /* RecommendViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				7E7278F5204D325800E797E3 /* YellowZB.xcdatamodeld in Sources */,
 				7E727920204E72AE00E797E3 /* HomeViewController.swift in Sources */,
 				7E727927204E928A00E797E3 /* Common.swift in Sources */,
+				7E72792D20526C9700E797E3 /* RecommendViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
