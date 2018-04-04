@@ -87,9 +87,9 @@
             <size key="customSize" width="176" height="231"/>
             <connections>
                 <outlet property="cityBtn" destination="nRW-Vb-LHx" id="QPM-61-cPY"/>
+                <outlet property="iconImageView" destination="opq-Rd-aG3" id="Y6x-Zx-uF8"/>
                 <outlet property="nickNameLabel" destination="oE5-po-oHZ" id="bHe-Yd-41W"/>
-                <outlet property="onlineButton" destination="iZG-mG-1Iv" id="WMD-Jw-2YL"/>
-                <outlet property="sourceImageView" destination="opq-Rd-aG3" id="LO5-DY-DY0"/>
+                <outlet property="onlineBtn" destination="iZG-mG-1Iv" id="Van-Fa-YC2"/>
             </connections>
             <point key="canvasLocation" x="89" y="-38.5"/>
         </collectionViewCell>

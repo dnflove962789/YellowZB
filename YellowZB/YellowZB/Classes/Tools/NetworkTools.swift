@@ -15,7 +15,7 @@ enum MethType {
 }
 
 class NetworkTools {
-    class func requestData(type: MethType, UILString: String, parameters: [String : String]? = nil, finishedCallback: @escaping (_ result : AnyObject) ->()) {
+    class func requestData(type: MethType, UILString: String, parameters: [String : Any]? = nil, finishedCallback: @escaping (_ result : Any) ->()) {
         
         //1.获取类型
         let method = type == .GET ? HTTPMethod.get : HTTPMethod.post
@@ -25,7 +25,7 @@ class NetworkTools {
                 print("出错了：\(response.result.error!)")
                 return
             }
-            finishedCallback(result as AnyObject)
+            finishedCallback(result)
         }
         
     }
