@@ -14,10 +14,9 @@
 import UIKit
 import Alamofire
 
-class RecommendViewModel {
+class RecommendViewModel : BaseViewModel {
     //MARK: - 懒加载属性
     lazy var cycleModels: [CycleMobdel] = [CycleMobdel]()
-    lazy var anchorGroups: [AnchorGroup] = [AnchorGroup]()
     private lazy var bigDataGroup: AnchorGroup = AnchorGroup()
     private lazy var prettyGroup: AnchorGroup = AnchorGroup()
     
@@ -73,21 +72,7 @@ extension RecommendViewModel {
         
         //3.请求后面游戏数据
         gd.enter()
-        NetworkTools.requestData(type: .GET, UILString: "http://capi.douyucdn.cn/api/v1/getHotCate", parameters: nil) { (result) in
-
-            //1.将result转成字段类型
-            guard let resultDict = result as? [String:Any] else {return}
-            //2.根据data该key，获取数组
-            guard let dataArray = resultDict["data"] as? [[String:Any]] else {return}
-            //3.遍历数组，获取字典，并且将
-
-
-            for di in dataArray {
-    
-                let group = AnchorGroup(dict: di)
-                self.anchorGroups.append(group)
-            }
-
+        loadAnchorData(isGroupData: true, URLString: "http://capi.douyucdn.cn/api/v1/getHotCate") {
             gd.leave()
         }
         
