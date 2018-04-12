@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4EB96B5B305591A081FFD63A /* Pods_YellowZB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F8CB0F28DB58E00B0B16BE /* Pods_YellowZB.framework */; };
-		6F2A8F7C207F8DCC008AD65D /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F2A8F7B207F8DCC008AD65D /* Live.storyboard */; };
+		6F2A8F7E207F8EF2008AD65D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2A8F7D207F8EF2008AD65D /* BaseViewController.swift */; };
+		6F9FD6B4207F905F00AD0406 /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F9FD6B3207F905F00AD0406 /* Live.storyboard */; };
 		7E150BD62058D3AB00A8B5D7 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E150BD52058D3AA00A8B5D7 /* NetworkTools.swift */; };
 		7E150BD9205903D300A8B5D7 /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E150BD8205903D300A8B5D7 /* RecommendViewModel.swift */; };
 		7E150BDB205909B100A8B5D7 /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E150BDA205909B100A8B5D7 /* NSDate-Extension.swift */; };
@@ -64,7 +65,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6F2A8F7B207F8DCC008AD65D /* Live.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Live.storyboard; path = ../../../../Live.storyboard; sourceTree = "<group>"; };
+		6F2A8F7D207F8EF2008AD65D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		6F9FD6B3207F905F00AD0406 /* Live.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Live.storyboard; sourceTree = "<group>"; };
 		71F8CB0F28DB58E00B0B16BE /* Pods_YellowZB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YellowZB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E150BD52058D3AA00A8B5D7 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		7E150BD8205903D300A8B5D7 /* RecommendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
@@ -153,6 +155,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6F9FD6B2207F904A00AD0406 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				6F9FD6B3207F905F00AD0406 /* Live.storyboard */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
 		7E150BD7205903A100A8B5D7 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,7 +219,7 @@
 			children = (
 				7E727907204D3F5E00E797E3 /* Main */,
 				7E727905204D3F5E00E797E3 /* Home */,
-				7E727906204D3F5E00E797E3 /* Live */,
+				6F9FD6B2207F904A00AD0406 /* Live */,
 				7E727904204D3F5E00E797E3 /* Follow */,
 				7E727908204D3F5E00E797E3 /* Profile */,
 				7E727909204D3F5E00E797E3 /* Tools */,
@@ -234,14 +244,6 @@
 				7E727919204E6FF800E797E3 /* Controller */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		7E727906204D3F5E00E797E3 /* Live */ = {
-			isa = PBXGroup;
-			children = (
-				6F2A8F7B207F8DCC008AD65D /* Live.storyboard */,
-			);
-			path = Live;
 			sourceTree = "<group>";
 		};
 		7E727907204D3F5E00E797E3 /* Main */ = {
@@ -332,6 +334,7 @@
 				7E7278F0204D325800E797E3 /* Main.storyboard */,
 				7E727916204E472B00E797E3 /* MainViewController.swift */,
 				7E1EA4482079E00600D6056A /* BaseAnchorViewController.swift */,
+				6F2A8F7D207F8EF2008AD65D /* BaseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -427,7 +430,7 @@
 				7E2ABE4020565EEC00C44AC0 /* CollectionNormalCell.xib in Resources */,
 				7E72790C204D570D00E797E3 /* Home.storyboard in Resources */,
 				7E727913204D57B900E797E3 /* Profile.storyboard in Resources */,
-				6F2A8F7C207F8DCC008AD65D /* Live.storyboard in Resources */,
+				6F9FD6B4207F905F00AD0406 /* Live.storyboard in Resources */,
 				7E150BF0206255DD00A8B5D7 /* RecommendGameView.xib in Resources */,
 				7E2ABE3B205631ED00C44AC0 /* CollectionHeaderView.xib in Resources */,
 				7EB02AD2207B32770055B1ED /* AmuseMenuViewCell.xib in Resources */,
@@ -500,6 +503,7 @@
 				7E1EA43A207369EE00D6056A /* GameViewController.swift in Sources */,
 				7E1EA43C2073710600D6056A /* GameViewModel.swift in Sources */,
 				7E727917204E472B00E797E3 /* MainViewController.swift in Sources */,
+				6F2A8F7E207F8EF2008AD65D /* BaseViewController.swift in Sources */,
 				7E727929204FC8C600E797E3 /* PageContentView.swift in Sources */,
 				7E72792B204FCF1900E797E3 /* UIColor-Extension.swift in Sources */,
 				7E7278ED204D325800E797E3 /* AppDelegate.swift in Sources */,

@@ -28,7 +28,10 @@ class FunnyViewController: BaseAnchorViewController {
         
         funnyVM.loadFunnyData {
             self.collectionView.reloadData()
+            
+            self.loadDataFinished()
         }
+    
         
     }
 }

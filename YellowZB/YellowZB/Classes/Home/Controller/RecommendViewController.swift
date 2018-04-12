@@ -52,12 +52,15 @@ class RecommendViewController: BaseAnchorViewController {
             
             
             self.gameView.groups = groups
+            
+            self.loadDataFinished()
         }
         
         //2.请求轮播数据
         recommendViewModel.requestCycleData {
             self.cycyleView.cycleModels = self.recommendViewModel.cycleModels
         }
+        
     }
     
     //MARK: - 设置UI界面内容

@@ -21,7 +21,7 @@ let kNormalItemH = kNormalItemW * 3/4
 let kPrettyItemH = kNormalItemW * 4/3
 
 
-class BaseAnchorViewController: UIViewController {
+class BaseAnchorViewController: BaseViewController {
 
     //MARK:-定义属性
     var baseVM: BaseViewModel!
@@ -59,8 +59,14 @@ class BaseAnchorViewController: UIViewController {
     }
     
     //MARK:- 设置ui界面
-    func setUpUI() {
+    override func setUpUI() {
+        //1.给父类中内容view的引用进行赋值
+        contentView = collectionView
+        //2.添加collectionView
         view.addSubview(collectionView)
+        
+        super.setupUI()
+        
     }
 
     // MARK:- 请求数据

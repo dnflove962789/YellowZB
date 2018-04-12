@@ -46,6 +46,8 @@ class AmuseViewController: BaseAnchorViewController {
             tempGroups.removeFirst()
             
             self.menuView.groups = tempGroups
+            
+            self.loadDataFinished()
         }
     }
 }

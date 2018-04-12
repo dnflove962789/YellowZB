@@ -16,7 +16,7 @@ class MainViewController: UITabBarController {
         // Do any additional setup after loading the view.
        
         addChlilVc(storyName: "Home")
-        //addChlilVc(storyName: "Live")
+        addChlilVc(storyName: "Live")
         addChlilVc(storyName: "Follow")
         addChlilVc(storyName: "Profile")
         
