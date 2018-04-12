@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4EB96B5B305591A081FFD63A /* Pods_YellowZB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F8CB0F28DB58E00B0B16BE /* Pods_YellowZB.framework */; };
+		6F2A8F7C207F8DCC008AD65D /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F2A8F7B207F8DCC008AD65D /* Live.storyboard */; };
 		7E150BD62058D3AB00A8B5D7 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E150BD52058D3AA00A8B5D7 /* NetworkTools.swift */; };
 		7E150BD9205903D300A8B5D7 /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E150BD8205903D300A8B5D7 /* RecommendViewModel.swift */; };
 		7E150BDB205909B100A8B5D7 /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E150BDA205909B100A8B5D7 /* NSDate-Extension.swift */; };
@@ -43,7 +44,6 @@
 		7E7278F7204D325800E797E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E7278F6204D325800E797E3 /* Assets.xcassets */; };
 		7E7278FA204D325800E797E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E7278F8204D325800E797E3 /* LaunchScreen.storyboard */; };
 		7E72790C204D570D00E797E3 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E72790A204D570D00E797E3 /* Home.storyboard */; };
-		7E72790E204D575400E797E3 /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E72790D204D575400E797E3 /* Live.storyboard */; };
 		7E727911204D578A00E797E3 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E72790F204D578A00E797E3 /* Follow.storyboard */; };
 		7E727913204D57B900E797E3 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E727912204D57B900E797E3 /* Profile.storyboard */; };
 		7E727915204E3EC000E797E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E727914204E3EC000E797E3 /* Images.xcassets */; };
@@ -64,6 +64,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F2A8F7B207F8DCC008AD65D /* Live.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Live.storyboard; path = ../../../../Live.storyboard; sourceTree = "<group>"; };
 		71F8CB0F28DB58E00B0B16BE /* Pods_YellowZB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YellowZB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E150BD52058D3AA00A8B5D7 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		7E150BD8205903D300A8B5D7 /* RecommendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
@@ -102,7 +103,6 @@
 		7E7278F9204D325800E797E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E7278FB204D325800E797E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E72790B204D570D00E797E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = YellowZB/Classes/Main/Base.lproj/Home.storyboard; sourceTree = "<group>"; };
-		7E72790D204D575400E797E3 /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Live.storyboard; sourceTree = "<group>"; };
 		7E727910204D578A00E797E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = YellowZB/Classes/Main/Base.lproj/Follow.storyboard; sourceTree = "<group>"; };
 		7E727912204D57B900E797E3 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		7E727914204E3EC000E797E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -239,7 +239,7 @@
 		7E727906204D3F5E00E797E3 /* Live */ = {
 			isa = PBXGroup;
 			children = (
-				7E72790D204D575400E797E3 /* Live.storyboard */,
+				6F2A8F7B207F8DCC008AD65D /* Live.storyboard */,
 			);
 			path = Live;
 			sourceTree = "<group>";
@@ -372,7 +372,6 @@
 				7E7278E6204D325800E797E3 /* Frameworks */,
 				7E7278E7204D325800E797E3 /* Resources */,
 				62E53016BB665A682AF340ED /* [CP] Embed Pods Frameworks */,
-				F1A00B761B5CC05A5676C4CC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -428,8 +427,8 @@
 				7E2ABE4020565EEC00C44AC0 /* CollectionNormalCell.xib in Resources */,
 				7E72790C204D570D00E797E3 /* Home.storyboard in Resources */,
 				7E727913204D57B900E797E3 /* Profile.storyboard in Resources */,
+				6F2A8F7C207F8DCC008AD65D /* Live.storyboard in Resources */,
 				7E150BF0206255DD00A8B5D7 /* RecommendGameView.xib in Resources */,
-				7E72790E204D575400E797E3 /* Live.storyboard in Resources */,
 				7E2ABE3B205631ED00C44AC0 /* CollectionHeaderView.xib in Resources */,
 				7EB02AD2207B32770055B1ED /* AmuseMenuViewCell.xib in Resources */,
 				7E727911204D578A00E797E3 /* Follow.storyboard in Resources */,
@@ -481,21 +480,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F1A00B761B5CC05A5676C4CC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YellowZB/Pods-YellowZB-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
