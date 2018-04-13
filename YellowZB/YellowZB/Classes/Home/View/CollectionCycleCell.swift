@@ -23,6 +23,7 @@ class CollectionCycleCell: UICollectionViewCell {
             let surl = (cycleModel?.pic_url)?.replacingOccurrences(of: "https", with: "http")
             let iconURl = URL(string: surl!)
             iconImageView.kf.setImage(with: iconURl)
+        
         }
     }
     

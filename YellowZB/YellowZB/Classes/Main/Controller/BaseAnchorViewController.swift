@@ -65,7 +65,7 @@ class BaseAnchorViewController: BaseViewController {
         //2.添加collectionView
         view.addSubview(collectionView)
         
-        super.setupUI()
+        super.setUpUI()
         
     }
 
@@ -74,15 +74,6 @@ class BaseAnchorViewController: BaseViewController {
     }
 }
 
-
-extension BaseAnchorViewController {
-    
-}
-
-
-extension BaseAnchorViewController {
-    
-}
 
 //MARK:-数据源
 extension BaseAnchorViewController : UICollectionViewDataSource {
@@ -124,5 +115,21 @@ extension BaseAnchorViewController : UICollectionViewDataSource {
 
 //MARK:- 代理
 extension BaseAnchorViewController : UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let anchor = baseVM.anchorGroups[indexPath.section].anchors[indexPath.item]
+        
+        //2.判断是秀场还是普通房间
+        anchor.isVertical == 0 ? pushNormalRoomVc() : presentShowRoomVc()
+    }
     
+    private func presentShowRoomVc() {
+        //1.创建showroom= vc
+        let showRoomVC = RoomShowViewController()
+        present(showRoomVC, animated: true, completion: nil)
+    }
+    
+    private func pushNormalRoomVc() {
+        let normalRoomVc = RoomNormalViewController()
+        navigationController?.pushViewController(normalRoomVc, animated: true)
+    }
 }
